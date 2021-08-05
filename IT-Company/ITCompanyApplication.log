@@ -1,0 +1,51 @@
+[main] DEBUG com.solvd.itcompany.dao.mysql.jdbc.CountryDAO  - 1
+[main] DEBUG com.solvd.itcompany.dao.mysql.jdbc.CountryDAO  - Country with id 4 was created in DB with following details: Country{id=4, name='EEUU', areaCode=1}
+[main] DEBUG com.solvd.itcompany.runner.Main  - Country{id=4, name='EEUU', areaCode=1}
+[main] DEBUG com.solvd.itcompany.runner.Main  - Country{id=1, name='Argentina', areaCode=54}
+[main] DEBUG com.solvd.itcompany.dao.mysql.jdbc.CityDAO  - City with id 1 was updated in DB with following details: City{id=1, name='Cordoba', zipCode=5001.0, country=Country{id=1, name='Argentina', areaCode=54}}
+[main] DEBUG com.solvd.itcompany.dao.mysql.jdbc.CityDAO  - City with id 1 was updated in DB with following details: City{id=1, name='Cordoba', zipCode=5000.0, country=Country{id=1, name='Argentina', areaCode=54}}
+[main] DEBUG com.solvd.itcompany.dao.mysql.jdbc.CityDAO  - 1
+[main] DEBUG com.solvd.itcompany.dao.mysql.jdbc.CityDAO  - City with id 4 was created in DB with following details: City{id=4, name='Buenos Aires', zipCode=1000.0, country=Country{id=1, name='Argentina', areaCode=54}}
+[main] DEBUG com.solvd.itcompany.dao.mysql.jdbc.CityDAO  - City with id 4 was created in DB with following details: City{id=4, name='Buenos Aires', zipCode=1000.0, country=Country{id=1, name='Argentina', areaCode=54}}
+[main] DEBUG com.solvd.itcompany.dao.mysql.jdbc.CityDAO  - java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'where clause'
+[main] DEBUG com.solvd.itcompany.dao.mysql.jdbc.CityDAO  - City with id: 5 was sucesfully deleted from DB
+[main] DEBUG com.solvd.itcompany.dao.mysql.jdbc.CityDAO  - City with id: 8 was sucesfully deleted from DB
+[main] DEBUG com.solvd.itcompany.dao.mysql.jdbc.CityDAO  - City with id: 4 was sucesfully deleted from DB
+[main] DEBUG com.solvd.itcompany.dao.mysql.jdbc.CityDAO  - City was created in DB with following details: City{id=4, name='Buenos Aires', zipCode=1000.0, country=Country{id=1, name='Argentina', areaCode=54}}
+[main] DEBUG com.solvd.itcompany.runner.Main  - City{id=6, name='Buenos Aires', zipCode=1000.0, country=null}
+[main] DEBUG com.solvd.itcompany.dao.mysql.jdbc.CityDAO  - org.apache.commons.dbcp2.DelegatingResultSet@31c7528f[resultSet=org.apache.commons.dbcp2.DelegatingResultSet@2b76ff4e[resultSet=com.mysql.cj.jdbc.result.ResultSetImpl@7a1234bf, statement=com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM Cities WHERE idCity = 6, connection=null], statement=com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM Cities WHERE idCity = 6, connection=null]
+[main] DEBUG com.solvd.itcompany.runner.Main  - City{id=6, name='Buenos Aires', zipCode=1000.0, country=null}
+[main] DEBUG com.solvd.itcompany.runner.Main  - City{id=6, name='Buenos Aires', zipCode=1000.0, country=null}
+[main] DEBUG com.solvd.itcompany.runner.Main  - City{id=1, name='Cordoba', zipCode=5000.0, country=null}
+[main] DEBUG com.solvd.itcompany.services.impl.CityService  - City{id=1, name='Cordoba', zipCode=5000.0, country=null}
+[main] DEBUG com.solvd.itcompany.runner.Main  - City{id=1, name='Cordoba', zipCode=5000.0, country=Country{id=1, name='null', areaCode=0}}
+[main] DEBUG com.solvd.itcompany.services.impl.CityService  - City{id=1, name='Cordoba', zipCode=5000.0, country=Country{id=1, name='null', areaCode=0}}
+[main] DEBUG com.solvd.itcompany.runner.Main  - City{id=1, name='Cordoba', zipCode=5000.0, country=Country{id=1, name='Argentina', areaCode=54}}
+[main] DEBUG com.solvd.itcompany.services.impl.CityService  - City{id=1, name='Cordoba', zipCode=5000.0, country=Country{id=1, name='null', areaCode=0}}
+[main] DEBUG com.solvd.itcompany.runner.Main  - City{id=1, name='Cordoba', zipCode=5000.0, country=Country{id=1, name='Argentina', areaCode=54}}
+[main] DEBUG com.solvd.itcompany.runner.Main  - City{id=1, name='Cordoba', zipCode=5000.0, country=Country{id=1, name='Argentina', areaCode=54}}
+[pool-1-thread-1] ERROR com.solvd.itcompany.runner.MainThreadTest  - java.sql.SQLSyntaxErrorException: Table 'train_station.passengers' doesn't exist
+[pool-1-thread-5] ERROR com.solvd.itcompany.runner.MainThreadTest  - java.sql.SQLSyntaxErrorException: Table 'train_station.passengers' doesn't exist
+[pool-1-thread-3] ERROR com.solvd.itcompany.runner.MainThreadTest  - java.sql.SQLSyntaxErrorException: Table 'train_station.passengers' doesn't exist
+[pool-1-thread-2] ERROR com.solvd.itcompany.runner.MainThreadTest  - java.sql.SQLSyntaxErrorException: Table 'train_station.passengers' doesn't exist
+[pool-1-thread-6] ERROR com.solvd.itcompany.runner.MainThreadTest  - java.sql.SQLSyntaxErrorException: Table 'train_station.passengers' doesn't exist
+[pool-1-thread-4] ERROR com.solvd.itcompany.runner.MainThreadTest  - java.sql.SQLSyntaxErrorException: Table 'train_station.passengers' doesn't exist
+[pool-1-thread-4] ERROR com.solvd.itcompany.runner.MainThreadTest  - java.sql.SQLSyntaxErrorException: Table 'train_station.passengers' doesn't exist
+[pool-1-thread-3] ERROR com.solvd.itcompany.runner.MainThreadTest  - java.sql.SQLSyntaxErrorException: Table 'train_station.passengers' doesn't exist
+[pool-1-thread-5] ERROR com.solvd.itcompany.runner.MainThreadTest  - java.sql.SQLSyntaxErrorException: Table 'train_station.passengers' doesn't exist
+[pool-1-thread-6] ERROR com.solvd.itcompany.runner.MainThreadTest  - java.sql.SQLSyntaxErrorException: Table 'train_station.passengers' doesn't exist
+[pool-1-thread-2] ERROR com.solvd.itcompany.runner.MainThreadTest  - java.sql.SQLSyntaxErrorException: Table 'train_station.passengers' doesn't exist
+[main] DEBUG com.solvd.itcompany.runner.MainThreadTest  - FirstName: Oliver
+ LastName: Oliver
+ Age: Oliver
+ Gender: Oliver
+ Train: Oliver
+ OtherUser: Oliver
+[pool-1-thread-6] ERROR com.solvd.itcompany.runner.MainThreadTest  - java.sql.SQLSyntaxErrorException: Unknown column 'idEmployee' in 'where clause'
+[pool-1-thread-6] ERROR com.solvd.itcompany.runner.MainThreadTest  - java.sql.SQLSyntaxErrorException: Unknown column 'idEmployee' in 'where clause'
+[main] DEBUG com.solvd.itcompany.runner.MainThreadTest  - FirstName: John
+ LastName: Adam
+ Age: Oliver
+ Gender: Jack
+ Train: Harry
+ OtherUser: Argentina
