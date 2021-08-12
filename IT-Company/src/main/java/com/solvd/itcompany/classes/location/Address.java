@@ -1,9 +1,18 @@
 package com.solvd.itcompany.classes.location;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name = "address")
 public class Address {
+    @XmlAttribute(name = "id")
     private long id;
+    @XmlElement(name = "street")
     private String street;
+    @XmlElement(name = "number")
     private long number;
+    @XmlElement(name = "city")
     private City city;
 
     public long getId() {

@@ -1,11 +1,18 @@
 package com.solvd.itcompany.classes.location;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.concurrent.CompletableFuture;
 
+@XmlRootElement(name = "city")
 public class City {
+    @XmlAttribute(name = "id")
     private long id;
+    @XmlElement(name = "name")
     private String name;
     private Double zipCode;
+    @XmlElement(name = "country")
     private Country country;
 
     public City(){}

@@ -1,0 +1,45 @@
+<?xml version = "1.0"?>
+<employees>
+    <employee id = "3">
+        <name>Adam</name>
+        <lastname>Smith</lastname>
+        <birthdate>1990-01-02</birthdate>
+        <hiredate>2012-09-21</hiredate>
+        <user id = "3">
+            <username>asmith</username>
+            <password>asmith123</password>
+        </user>
+        <address id = "3">
+            <street>Rondeau</street>
+            <number>60</number>
+            <city id = "3">
+                <name>Cordoba</name>
+                <country>
+                    <name>Argentina</name>
+                </country>
+            </city>
+        </address>
+    </employee>
+
+    <employee id = "4">
+        <name>Adam</name>
+        <name>Oliver</name>
+        <lastname>Stone</lastname>
+        <birthdate>1994-09-17</birthdate>
+        <hiredate>2019-11-28</hiredate>
+        <user id = "4">
+            <username>ostone</username>
+            <password>ostone123</password>
+        </user>
+        <address id = "4">
+            <street>TravesseraDeLesCorts</street>
+            <number>700</number>
+            <city id = "4">
+                <name>Barcelona</name>
+                <country>
+                    <name>Spain</name>
+                </country>
+            </city>
+        </address>
+    </employee>
+</employees>

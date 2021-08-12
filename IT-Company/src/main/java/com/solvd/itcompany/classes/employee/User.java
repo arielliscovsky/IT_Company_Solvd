@@ -1,8 +1,16 @@
 package com.solvd.itcompany.classes.employee;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name = "user")
 public class User {
+    @XmlAttribute(name = "id")
     private long id;
+    @XmlElement(name = "username")
     private String userName;
+    @XmlElement(name = "password")
     private String password;
 
     public long getId() {

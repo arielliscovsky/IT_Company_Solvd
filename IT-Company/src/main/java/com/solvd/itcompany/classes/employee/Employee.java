@@ -1,18 +1,33 @@
 package com.solvd.itcompany.classes.employee;
 
 import com.solvd.itcompany.classes.location.Address;
+import com.solvd.itcompany.xmlParser.DateAdapter;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.Date;
 
+
+@XmlRootElement(name = "employee")
 public class Employee {
+    @XmlAttribute(name = "id")
     private long id;
+    @XmlElement(name = "name")
     private String name;
+    @XmlElement(name = "lastname")
     private String lastName;
+    @XmlJavaTypeAdapter(DateAdapter.class)
     private Date birthDate;
+    @XmlJavaTypeAdapter(DateAdapter.class)
     private Date hireDate;
     private String phoneNumber;
     private String email;
+    @XmlElement(name = "user")
     private User user;
+    @XmlElement(name = "address")
     private Address address;
     private Employee reportsTo;
 
