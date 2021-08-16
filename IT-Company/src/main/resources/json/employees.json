@@ -1,0 +1,10 @@
+{
+  "name": "John",
+  "lastName": "Stone",
+  "birthDate": "17-01-1990",
+  "user": {
+    "userName": "jstone",
+    "password": "jstone123"
+  }
+
+}

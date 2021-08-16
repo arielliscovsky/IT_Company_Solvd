@@ -13,9 +13,9 @@
             <street>Rondeau</street>
             <number>60</number>
             <city id = "3">
-                <name>Cordoba</name>
+                <cityname>Cordoba</cityname>
                 <country>
-                    <name>Argentina</name>
+                    <contryname>Argentina</contryname>
                 </country>
             </city>
         </address>
@@ -35,9 +35,9 @@
             <street>TravesseraDeLesCorts</street>
             <number>700</number>
             <city id = "4">
-                <name>Barcelona</name>
+                <cityname>Barcelona</cityname>
                 <country>
-                    <name>Spain</name>
+                    <countryname>Spain</countryname>
                 </country>
             </city>
         </address>

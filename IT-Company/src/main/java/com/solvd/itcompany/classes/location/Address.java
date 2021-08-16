@@ -6,15 +6,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "address")
 public class Address {
-    @XmlAttribute(name = "id")
+
     private long id;
-    @XmlElement(name = "street")
     private String street;
-    @XmlElement(name = "number")
     private long number;
-    @XmlElement(name = "city")
     private City city;
 
+    @XmlAttribute(name = "id")
     public long getId() {
         return id;
     }
@@ -22,7 +20,7 @@ public class Address {
     public void setId(long id) {
         this.id = id;
     }
-
+    @XmlElement(name = "street")
     public String getStreet() {
         return street;
     }
@@ -30,7 +28,7 @@ public class Address {
     public void setStreet(String street) {
         this.street = street;
     }
-
+    @XmlElement(name = "number")
     public long getNumber() {
         return number;
     }
@@ -38,12 +36,22 @@ public class Address {
     public void setNumber(long number) {
         this.number = number;
     }
-
+    @XmlElement(name = "city")
     public City getCity() {
         return city;
     }
 
     public void setCity(City city) {
         this.city = city;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "id=" + id +
+                ", street='" + street + '\'' +
+                ", number=" + number +
+                ", city=" + city +
+                '}';
     }
 }

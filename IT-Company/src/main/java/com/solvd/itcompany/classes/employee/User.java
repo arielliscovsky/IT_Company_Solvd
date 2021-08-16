@@ -1,18 +1,21 @@
 package com.solvd.itcompany.classes.employee;
 
+import com.fasterxml.jackson.annotation.JsonRootName;
+import com.fasterxml.jackson.annotation.JsonValue;
+
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+@JsonRootName("user")
 @XmlRootElement(name = "user")
 public class User {
-    @XmlAttribute(name = "id")
+
     private long id;
-    @XmlElement(name = "username")
     private String userName;
-    @XmlElement(name = "password")
     private String password;
 
+    @XmlAttribute(name = "id")
     public long getId() {
         return id;
     }
@@ -20,7 +23,7 @@ public class User {
     public void setId(long id) {
         this.id = id;
     }
-
+    @XmlElement(name = "username")
     public String getUserName() {
         return userName;
     }
@@ -28,7 +31,7 @@ public class User {
     public void setUserName(String userName) {
         this.userName = userName;
     }
-
+    @XmlElement(name = "password")
     public String getPassword() {
         return password;
     }
@@ -36,4 +39,15 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+
+
 }

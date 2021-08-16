@@ -6,9 +6,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "country")
 public class Country {
-    @XmlAttribute(name = "id")
+
     private long id;
-    @XmlElement(name = "name")
     private String name;
     private int areaCode;
 
@@ -20,7 +19,7 @@ public class Country {
         this.areaCode = areaCode;
     }
 
-
+    @XmlAttribute(name = "id")
     public long getId() {
         return id;
     }
@@ -28,7 +27,7 @@ public class Country {
     public void setId(long id) {
         this.id = id;
     }
-
+    @XmlElement(name = "name")
     public String getName() {
         return name;
     }

@@ -7,12 +7,10 @@ import java.util.concurrent.CompletableFuture;
 
 @XmlRootElement(name = "city")
 public class City {
-    @XmlAttribute(name = "id")
+
     private long id;
-    @XmlElement(name = "name")
     private String name;
     private Double zipCode;
-    @XmlElement(name = "country")
     private Country country;
 
     public City(){}
@@ -24,6 +22,7 @@ public class City {
         this.country = country;
     }
 
+    @XmlAttribute(name = "id")
     public long getId() {
         return id;
     }
@@ -31,7 +30,7 @@ public class City {
     public void setId(long id) {
         this.id = id;
     }
-
+    @XmlElement(name = "name")
     public String getName() {
         return name;
     }
@@ -47,7 +46,7 @@ public class City {
     public void setZipCode(Double zipCode) {
         this.zipCode = zipCode;
     }
-
+    @XmlElement(name = "country")
     public Country getCountry() {
         return country;
     }
