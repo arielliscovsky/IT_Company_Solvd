@@ -1,0 +1,4 @@
+jdbc.driverClassName=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://52.59.193.212:3306/IT_Company_ArielL
+jdbc.username=root
+jdbc.password=devintern
